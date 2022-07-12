@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'universal-feint';
+
+
+
+  constructor( 
+    public router : Router,
+)
+{
+
+}
+
 }

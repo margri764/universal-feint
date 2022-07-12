@@ -1,0 +1,66 @@
+
+
+
+
+<div class="toolbar"  [ngStyle]="{'display':(show) ? 'none' : 'block' }"    >
+
+<app-sidebar (emitShow)="show = $event"></app-sidebar>
+
+
+</div>
+
+
+
+
+
+
+<div class="header animate__animated animate__fadeIn">
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+
+        <div class="feint animate__animated animate__backInLeft">
+             <span>Feint</span><span class="devs">dEvs</span> 
+        </div>
+  
+        <div class="icon animate__animated animate__backInDown">         
+            <button mat-icon-button  (click)="showToolbar()">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" >menu</mat-icon>
+            </button>           
+        </div>
+
+    </div>
+
+
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center"class="content" >
+    <!-- <div fxFlex="20"  fxFlex.lg="15"fxFlex.sm="30"> -->
+
+
+        <div fxLayout="column" fxFlex="50%">
+            
+            <div fxFlexOrder="1" fxLayoutAlign="center center">
+                <label >Especialistas en  Desarrollo Web</label>  
+            </div>    
+            
+            <div fxFlexOrder="2" fxLayoutAlign="start" style="margin-left: 20px; margin-top: 30px;">
+                    
+               <a><button class="btn" routerLink="contact-us">Nos ponemos en contacto? </button></a>
+                 
+            </div>
+        
+        </div>             
+                   
+
+        <div  fxLayoutAlign="center center" fxFlex="50%"  >
+            <img fxFlex="80%" src="../../../assets/logo2.gif"  >
+        </div>
+        
+
+
+    
+</div>
+
+
+
+
+</div>
+

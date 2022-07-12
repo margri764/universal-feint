@@ -1,0 +1,122 @@
+<br><br><br>
+<div >
+   <p class="text"> Somos un grupo de desarrolladores que nos apasiona construir 
+      aplicaciones web. <br>
+      Ofrecemos experiencia, diseño y desarrollo personalizado.</p>
+   <p class="text2"> No utilizamos plantillas, contamos con soluciones a tus demandas
+      con productos previamente testeados, lo que nos permite garantizar el rendimiento
+      y confiabilidad.
+   </p>
+</div>
+
+
+<div fxLayout="row wrap" 
+   fxLayout.xs="column"       	
+   fxLayoutAlign="center"        
+   fxLayoutGap="20px"   		
+   >
+
+  <div fxFlex="30"    		
+       fxFlex.lg="15"		
+       fxFlex.sm="30"
+       fxFlex.lg="30"
+       *ngFor="let card of featuresCards">
+
+
+<mat-card class="mat-elevation-z0" >
+
+
+  <mat-card-header fxLayoutAlign="center center" >
+
+      <mat-card-title style="margin-top: 1vw;"> {{card.title}}  </mat-card-title>
+  
+  </mat-card-header>
+  <br>
+
+  <img  mat-card-image [src]="card.img">   
+
+  <mat-card-content >
+      <p >{{card.description}}
+
+      </p>
+  </mat-card-content>
+
+
+</mat-card>
+
+
+</div>
+
+</div> <!-- cards end -->
+<br><br><br>
+
+
+
+<div >
+   <p class="text">Diseño Responsivo</p>
+   <p class="text2">Nuestros diseños son adaptables a cualquier dispositivo.
+   </p>
+</div>
+
+<br><br><br>
+
+
+<div fxLayout="row wrap" fxLayout.xs="column"  fxLayoutAlign="center">
+ 
+<div >
+   <img  src="../../../assets/responsive2.gif" width="100%" > 
+</div>
+</div>  <!-- responsive end -->
+
+<br><br><br><br>
+
+<div >
+   <p class="text">Actualizamos tus antiguos proyectos</p>
+   <p class="text2">Podemos actualizar tus proyectos existentes para que sean
+      compatibles con los navegadores actuales y adaptables a todos los dispositivos.
+   </p>
+</div>
+
+<br><br><br>
+
+
+<div fxLayout="row wrap" fxLayout.xs="column"   >
+ 
+<div fxLayoutAlign="center center" >
+   <img  src="../../../assets/visual-basic.png"  fxFlex="80" > 
+</div>
+</div>  <!-- responsive end -->
+
+<br><br><br><br>
+
+<div >
+   <p class="text">Construimos nuestro Stack con lo mejor del mundo IT </p>
+   <p class="text2">Nos permite construir fuertes aplicaciones, 100% escalables. Sin limites!!
+   </p>
+</div>
+
+<br><br><br>
+
+<div fxLayout="row no-wrap"  fxLayoutAlign="space-around center" style="background:rgb(252, 242, 228);">
+
+   <div fxFlex="30" fxLayoutAlign="center center">
+      <img src="../../../assets/mongodb-atlas.png" id="mongo" > 
+   </div>
+
+   <div fxFlex="30" fxLayoutAlign="center center">
+      <img src="../../../assets/node-express.png" id="node" > 
+   </div>
+
+   <div fxFlex="30" fxLayoutAlign="center center">
+      <img src="../../../assets/angular.png" id="angular" > 
+   </div>
+
+</div>
+<br><br>
+
+
+
+
+
+
+
