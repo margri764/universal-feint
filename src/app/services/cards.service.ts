@@ -45,7 +45,7 @@ getCards(){
 }
 
 sendMessage(body:any) : Observable<any> {
-  return this._http.post(`${this.baseUrl}api/send-email`, body);
+  return this._http.post(`${this.baseUrl}api/send-email/feint`, body);
 };
 
 
