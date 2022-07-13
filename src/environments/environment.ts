@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://feintdevs/',
+  baseUrl: 'https://fein/',
+  // baseUrl: '82.180.161.101:8000/',
  
 };
 
