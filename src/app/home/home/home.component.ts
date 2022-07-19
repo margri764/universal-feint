@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
 
     this.title.setTitle("Desarrollo Paginas web - Crear Sitios web y Apps")
     this.meta.addTag({name:"description", content:"desarrollo web, crear sitios web, marketing digital, realico, la pampa, paginas web, app, aplicaciones web"});
-    this.meta.addTag({name:"keywords", content:"desarrollo web, sitios web, marketing digital, realico, la pampa, paginas web, app"});
+    this.meta.addTag({name:"keywords", content:"desarrollo web realico la pampa, sitios web la pampa, marketing digital realico la pampa,  paginas web realico la pampa, app la pampa"});
     this.meta.addTag({name:"author", content:"FeintdEvs"});
     this.meta.addTag({name:"robots", content:"index, follow"});
 
