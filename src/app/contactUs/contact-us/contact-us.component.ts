@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component,  OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { CardsService } from 'src/app/services/cards.service';
 import { ValidatorService } from 'src/app/services/validator.service';
+
 import Swal from 'sweetalert2';
 
 
@@ -39,7 +40,8 @@ message :['']
               private router : Router,
               private fb : FormBuilder,
               private meta: Meta,
-              private title : Title
+              private title : Title,
+    
               )
 
   {}
@@ -58,16 +60,15 @@ message :['']
 
 
   ngOnInit(): void {
- 
-    if(screen.width > 300 && screen.width < 574){
-    this.hidden = true;
-    }
+
+
 
 
     this.title.setTitle("contacto-con-desarrollo-web")
     this.meta.addTag({name:"description", content:"desarrollo web, crear sitios web, marketing digital, realico, la pampa, paginas web, app, aplicaciones web, contacto, email,"});
-    this.meta.addTag({name:"keywords", content:"contacto, email, whatsapp, desarrollo web, sitios web, marketing digital, realico, la pampa, paginas web, app"});
-  
+    this.meta.addTag({name:"keywords", content:"contacto, formulario, email, whatsapp, desarrollo web, sitios web, marketing digital, realico, la pampa, paginas web, app"});
+    this.meta.addTag({name:"author", content:"FeintdEvs"});
+    this.meta.addTag({name:"robots", content:"index, follow"});
   }
 
   

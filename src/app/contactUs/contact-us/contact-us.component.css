@@ -152,6 +152,9 @@ mat-form-field{
  }
 
 
+ .phone{
+  display: block;
+ }
   
   
  
@@ -212,7 +215,11 @@ mat-form-field{
         padding: 1.3em 3em;
         font-size: 2vw;
       }
-       
+
+      .phone{
+        display: none;
+       }
+        
     }  
        
      
