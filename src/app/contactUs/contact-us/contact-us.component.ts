@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { CardsService } from 'src/app/services/cards.service';
 import { ValidatorService } from 'src/app/services/validator.service';
@@ -37,9 +38,11 @@ message :['']
               private validatorservice : ValidatorService,
               private router : Router,
               private fb : FormBuilder,
-  ) { 
+              private meta: Meta,
+              private title : Title
+              )
 
-  }
+  {}
 
 
   validField( field: string ) {
@@ -52,6 +55,8 @@ message :['']
 
 
 
+
+
   ngOnInit(): void {
  
     if(screen.width > 300 && screen.width < 574){
@@ -59,6 +64,10 @@ message :['']
     }
 
 
+    this.title.setTitle("contacto-con-desarrollo-web")
+    this.meta.addTag({name:"description", content:"desarrollo web, crear sitios web, marketing digital, realico, la pampa, paginas web, app, aplicaciones web, contacto, email,"});
+    this.meta.addTag({name:"keywords", content:"contacto, email, whatsapp, desarrollo web, sitios web, marketing digital, realico, la pampa, paginas web, app"});
+  
   }
 
   

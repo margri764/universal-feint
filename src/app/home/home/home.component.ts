@@ -31,7 +31,17 @@ export class HomeComponent implements OnInit {
     this.title.setTitle("Desarrollo Paginas web - Crear Sitios web y Apps")
     this.meta.addTag({name:"description", content:"desarrollo web, crear sitios web, marketing digital, realico, la pampa, paginas web, app, aplicaciones web"});
     this.meta.addTag({name:"keywords", content:"desarrollo web, sitios web, marketing digital, realico, la pampa, paginas web, app"});
-  
+    this.meta.addTag({name:"author", content:"FeintdEvs"});
+    this.meta.addTag({name:"robots", content:"index, follow"});
+
+
+    //facebook
+    this.meta.addTag({ property: 'og:type', content: 'article' });
+    this.meta.addTag({ property: 'og:site_name', content: 'FeintdEvs' }); 
+    this.meta.addTag({ property: 'og:title', content: "Nuestra mision" }); 
+    this.meta.addTag({ property: 'og:description', content: "Desarrollo Web, Paginas Web, Creamos tu Sistema web a medida, Crear App" }); 
+    this.meta.addTag({ property: 'og:image', content:""  }); 
+    this.meta.addTag({ property: 'og:url', content: "https://feintdevs.com" });
 
   }
 

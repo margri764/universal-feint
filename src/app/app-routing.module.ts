@@ -8,11 +8,11 @@ import { HomeComponent } from './home/home/home.component';
 
 
   const routes: Routes = [
-    { path: "", redirectTo: "home", pathMatch: 'full'},
-    { path: 'home', component: HomeComponent},
-    { path: 'contact-us', component: ContactUsComponent}, 
+    { path: "", redirectTo: "desarrollo-paginas-web-crear-sitios-web-apps", pathMatch: 'full'},
+    { path: 'desarrollo-paginas-web-crear-sitios-web-apps', component: HomeComponent},
+    { path: 'contacto-con-desarrollo-web', component: ContactUsComponent}, 
     { path: 'gratitude', component: GratitudeComponent}, 
-    { path: '**', redirectTo: 'home'},
+    { path: '**', redirectTo: 'desarrollo-paginas-web-crear-sitios-web-apps'},
 
 ];
 
