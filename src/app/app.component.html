@@ -10,7 +10,7 @@
       
           <div class="content">
      
-            <app-header *ngIf="!(router.url === '/contacto-con-desarrollo-web' )"></app-header>
+            <app-header *ngIf="!(router.url === '/contacto-con-desarrollo-web' ||router.url === '/gracias-por-el-contacto' )"></app-header>
 
             
           
@@ -23,7 +23,7 @@
           </div>
            <div class="footer">
        
-             <app-footer></app-footer>
+             <app-footer *ngIf="!(router.url === '/gracias-por-el-contacto' )"></app-footer>
           </div> 
       </div> 
   </div>

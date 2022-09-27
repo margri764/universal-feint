@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home/home.component';
     { path: "", redirectTo: "desarrollo-paginas-web-crear-sitios-web-apps", pathMatch: 'full'},
     { path: 'desarrollo-paginas-web-crear-sitios-web-apps', component: HomeComponent},
     { path: 'contacto-con-desarrollo-web', component: ContactUsComponent}, 
-    { path: 'gratitude', component: GratitudeComponent}, 
+    { path: 'gracias-por-el-contacto', component: GratitudeComponent}, 
     { path: '**', redirectTo: 'desarrollo-paginas-web-crear-sitios-web-apps'},
 
 ];
@@ -19,9 +19,8 @@ import { HomeComponent } from './home/home/home.component';
 
   @NgModule({
     imports: [
-      RouterModule.forRoot(routes, {
-    initialNavigation: 'enabledBlocking'
-})
+      RouterModule.forRoot(routes)
+      // , {    initialNavigation: 'enabledBlocking'})
     ],
     exports: [
         RouterModule

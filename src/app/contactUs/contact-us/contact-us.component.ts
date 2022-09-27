@@ -87,14 +87,14 @@ message :['']
                 icon: 'success',
                 title: 'Mensaje Enviado correctamente!!',
                 showConfirmButton: false,
-                timer: 3000
+                timer: 1500
                 });
                 this.clicked = true;
                 this.showSpinner = false;
                 this.myForm.reset();
        
            }
-          //  this.router.navigateByUrl('gratitude')
+           this.router.navigateByUrl('gratitude')
           })    
               
    }
