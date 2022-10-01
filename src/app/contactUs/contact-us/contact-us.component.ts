@@ -94,7 +94,7 @@ message :['']
                 this.myForm.reset();
        
            }
-           this.router.navigateByUrl('gratitude')
+           this.router.navigateByUrl('/gratitude')
           })    
               
    }
