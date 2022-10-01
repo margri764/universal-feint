@@ -69,7 +69,7 @@
      
     <div *ngIf="!showSpinner" >
       
-    <form  [formGroup]="myForm" (ngSubmit)="sendForm()" id="form" >     
+    <form  [formGroup]="myForm"  id="form" >     
 
       <mat-form-field appearance="outline"> 
           <mat-label>nombre</mat-label>
@@ -110,7 +110,7 @@
 
     <div fxLayoutAlign="center center" fxLayoutGap="5px">
      
-      <button  type="submit" class="btn" [ngStyle]="{'display':(clicked) ? 'none' : 'block' }" ><mat-label>Enviar</mat-label></button>
+      <button  type="submit" class="btn" [ngStyle]="{'display':(clicked) ? 'none' : 'block' }" (click)="sendForm();gtag_report_conversion()"><mat-label>Enviar</mat-label></button>
       <button mat-button  type="button" class="btn" routerLink="/desarrollo-paginas-web-crear-sitios-web-apps"><mat-label>Volver</mat-label></button>
     </div> 
 
