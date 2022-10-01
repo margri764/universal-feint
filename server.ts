@@ -11,8 +11,8 @@ import {AppServerModule} from './src/main.server';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  const distFolder = join(process.cwd(), 'browser');
-  // const distFolder = join(process.cwd(), 'dist/universal-feint/browser');
+  // const distFolder = join(process.cwd(), 'browser');
+  const distFolder = join(process.cwd(), 'dist/universal-feint/browser');
 
 
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
@@ -41,8 +41,8 @@ export function app(): express.Express {
 }
 
 function run(): void {
-  // const port = process.env['PORT'] || 4000;
-  const port = 9000;
+  const port = process.env['PORT'] || 4000;
+  // const port = 9000;
 
 
   // Start up the Node server

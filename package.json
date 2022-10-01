@@ -10,7 +10,8 @@
     "dev:ssr": "ng run universal-feint:serve-ssr",
     "serve:ssr": "node dist/universal-feint/server/main.js",
     "build:ssr": "ng build && ng run universal-feint:server",
-    "prerender": "ng run universal-feint:prerender"
+    "prerender": "ng run universal-feint:prerender",
+    "serve:prerender": "http-server -c-l dist/universal-feint/browser"
   },
   "private": true,
   "dependencies": {

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: '/',
+  baseUrl: 'https://dulcealmadeco.com/',
+  
 
   
   // baseUrl: '82.180.161.101:8000/',
