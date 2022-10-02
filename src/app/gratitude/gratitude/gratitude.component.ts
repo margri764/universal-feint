@@ -12,7 +12,6 @@ export class GratitudeComponent implements OnInit {
 
   constructor( 
     public router : Router,
-    private gtmService: GoogleTagManagerService,
 )
 {
 
@@ -20,15 +19,10 @@ export class GratitudeComponent implements OnInit {
 
 }
   ngOnInit(): void {
-    this.router.events.forEach(item => {
-      if (item instanceof NavigationEnd) {
-        const gtmTag = {
-          event: 'page',
-          pageName: item.url
-        };
-  
-        this.gtmService.pushTag(gtmTag);
-      }
-    });
+
+    setTimeout(()=>{
+      this.router.navigateByUrl('/desarrollo-paginas-web-crear-sitios-web-apps')
+    },4000)
+
   }
 }
