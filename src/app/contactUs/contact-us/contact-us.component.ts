@@ -48,8 +48,8 @@ message :['']
               )
 
   {
-    this.url= this.activatedRoute.snapshot.url[0].path;
-    console.log( this.activatedRoute.snapshot.url[0].path);
+    // this.url= this.activatedRoute.snapshot.url[0].path;
+    // console.log( this.activatedRoute.snapshot.url[0].path);
   }
 
 
@@ -60,19 +60,19 @@ message :['']
   }
 
 
-  gtag_report_conversion() {
+  // gtag_report_conversion() {
 
-    var callback =  () => {
-      if ((this.url) != 'undefined') {
-        window.location = this.url;
-      }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-10948441291/hGGKCMnF-uIDEMvpz-Qo',
-        'event_callback': callback
-    });
-    return false;
-  }
+  //   var callback =  () => {
+  //     if ((this.url) != 'undefined') {
+  //       window.location = this.url;
+  //     }
+  //   };
+  //   gtag('event', 'conversion', {
+  //       'send_to': 'AW-10948441291/hGGKCMnF-uIDEMvpz-Qo',
+  //       'event_callback': callback
+  //   });
+  //   return false;
+  // }
   
 
   
@@ -112,8 +112,9 @@ message :['']
                 this.showSpinner = false;
                 this.myForm.reset();
        
+                // this.gtag_report_conversion();
+                this.router.navigateByUrl('/gracias-por-el-contacto');
            }
-           this.router.navigateByUrl('/gracias-por-el-contacto')
           })    
               
    }

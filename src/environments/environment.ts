@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   baseUrl: 'https://dulcealmadeco.com/',
+  googleAnalyticsId: 'AW-10948441291'
   
 
   
