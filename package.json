@@ -28,6 +28,7 @@
     "@angular/platform-server": "^14.0.0",
     "@angular/router": "^14.0.0",
     "@nguniversal/express-engine": "^14.0.3",
+    "angular-google-tag-manager": "^1.6.1",
     "animate.css": "^4.1.1",
     "express": "^4.15.2",
     "font-awesome": "^4.7.0",

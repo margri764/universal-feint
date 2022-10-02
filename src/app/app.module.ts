@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './material/material/material.module';
+import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 
 
 
@@ -36,9 +37,15 @@ import { GratitudeComponent } from './gratitude/gratitude/gratitude.component';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleTagManagerModule.forRoot({
+      id: 'GTM-5S6TT48',
+    
+    })
   ],
-providers: [],
+providers: [
+  { provide: 'googleTagManagerCSPNonce', useValue: 'CSP-NONCE' },
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
