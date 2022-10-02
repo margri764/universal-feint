@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 
 
 @Component({
@@ -9,16 +10,25 @@ import { Router } from '@angular/router';
 })
 export class GratitudeComponent implements OnInit {
 
-  constructor(
-    private router : Router
-) { }
+  constructor( 
+    public router : Router,
+    private gtmService: GoogleTagManagerService,
+)
+{
 
-ngOnInit(): void {
 
-setTimeout(()=>{
 
-this.router.navigateByUrl('/home')
-},4000)
 }
-
+  ngOnInit(): void {
+    this.router.events.forEach(item => {
+      if (item instanceof NavigationEnd) {
+        const gtmTag = {
+          event: 'page',
+          pageName: item.url
+        };
+  
+        this.gtmService.pushTag(gtmTag);
+      }
+    });
+  }
 }
