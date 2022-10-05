@@ -38,13 +38,13 @@ import { GratitudeComponent } from './gratitude/gratitude/gratitude.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    // GoogleTagManagerModule.forRoot({
-    //   id: 'GTM-5S6TT48',
+    GoogleTagManagerModule.forRoot({
+      id: 'GTM-5S6TT48',
     
-    // })
+    })
   ],
 providers: [
-  // { provide: 'googleTagManagerCSPNonce', useValue: 'CSP-NONCE' },
+  { provide: 'googleTagManagerCSPNonce', useValue: 'CSP-NONCE' },
 ],
   bootstrap: [AppComponent]
 })
