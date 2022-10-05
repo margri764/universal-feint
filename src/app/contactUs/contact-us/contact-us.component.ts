@@ -5,7 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CardsService } from 'src/app/services/cards.service';
 import { ValidatorService } from 'src/app/services/validator.service';
 
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 declare let gtag: (property: string, value: any, configs: any) => {};
 
@@ -101,13 +101,13 @@ message :['']
   
         this.messageService.sendMessage(this.myForm.value).subscribe( (res) => {
             if (res=='true') {
-              Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: 'Mensaje Enviado correctamente!!',
-                showConfirmButton: false,
-                timer: 1500
-                });
+              // Swal.fire({
+              //   position: 'center',
+              //   icon: 'success',
+              //   title: 'Mensaje Enviado correctamente!!',
+              //   showConfirmButton: false,
+              //   timer: 1500
+              //   });
                 this.clicked = true;
                 this.showSpinner = false;
                 this.myForm.reset();
