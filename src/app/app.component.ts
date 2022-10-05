@@ -22,15 +22,15 @@ export class AppComponent implements OnInit {
 
 }
   ngOnInit(): void {
-    this.router.events.forEach(item => {
-      if (item instanceof NavigationEnd) {
-        const gtmTag = {
-          event: 'page',
-          pageName: item.url
-        };
+    // this.router.events.forEach(item => {
+    //   if (item instanceof NavigationEnd) {
+    //     const gtmTag = {
+    //       event: 'page',
+    //       pageName: item.url
+    //     };
   
-        this.gtmService.pushTag(gtmTag);
-      }
-    });
+    //     this.gtmService.pushTag(gtmTag);
+    //   }
+    // });
   }
 }
