@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, OnChanges, OnInit, Renderer2, SimpleChanges, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -15,13 +16,18 @@ export class FooterComponent implements OnInit {
     }
 
   constructor(
-              private rendered : Renderer2,
-               private element : ElementRef
+              private router : Router
 
   ) { 
     
   }
 
+  goToGratitude(){
+
+    setTimeout(()=>{
+      this.router.navigateByUrl("/gracias-por-el-contacto");
+    },1000)
+  }
 
 
 
