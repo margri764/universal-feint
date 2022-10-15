@@ -32,6 +32,7 @@ export class SidebarComponent implements OnInit {
     switch( value ) {
       case 'whatsapp' :
                   (window as any).open('https://wa.me/+542302690139?text=Hola!!%20', "_blank");
+                  this.route.navigateByUrl('gracias-por-el-contacto')
        break;
       
       case 'gps': 
@@ -47,9 +48,10 @@ export class SidebarComponent implements OnInit {
                 showConfirmButton: false,
                 });
      break;
-     
+    //  development@feintdevs.com
      case 'email': 
-                this.route.navigateByUrl('/contact-us')
+                (window as any).open('mailto:margri764@gmail.com', "_blank");
+                this.route.navigateByUrl('gracias-por-el-contacto')
      break;
   
     }
